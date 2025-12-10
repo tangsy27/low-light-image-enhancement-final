@@ -1,11 +1,11 @@
-# Low light enhancement
+# Retinex-Based Low-Light Image Enhancement
 
 This is the final project of computer vision class in [MUST](https://www.must.edu.mo), which focuses on low-light image enhancement based on Retinex theory. It reproduces and compares three representative methods: Multi-Scale Retinex (MSR), Retinex-Net, and Retinexformer, under a unified experimental and evaluation pipeline.
 
----
-By _Shuoyan Tang(1220009721), Xinran Mi(12200011281)_
+**Authors:**  
+- Shuoyan Tang (12200009721)  
+- Xinran Mi (12200011281)
 
----
 ### Introduction
 
 **Faster** R-CNN is an object detection framework based on deep convolutional networks, which includes a Region Proposal Network (RPN) and an Object Detection Network. Both networks are trained for sharing convolutional layers for fast testing. 
