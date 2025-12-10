@@ -1,8 +1,9 @@
 # Retinex-Based Low-Light Image Enhancement
 
-This is the final project of computer vision class in [MUST](https://www.must.edu.mo), which focuses on low-light image enhancement based on Retinex theory. It reproduces and compares three representative methods: Multi-Scale Retinex (MSR), Retinex-Net, and Retinexformer, under a unified experimental and evaluation pipeline.
+This is a final project for the Computer Vision course in [MUST](https://www.must.edu.mo), which focuses on low-light image enhancement based on Retinex theory. 
+It reproduces and compares three representative methods: Multi-Scale Retinex (MSR), Retinex-Net, and Retinexformer, under a unified experimental and evaluation pipeline.
 
-👤 **Authors:**  
+**Authors:**  
 - Shuoyan Tang (12200009721)  
 - Xinran Mi (12200011281)
 
