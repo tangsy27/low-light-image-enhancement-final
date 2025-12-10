@@ -1,5 +1,5 @@
 # Low light enhancement
-## This repo has been deprecated. Please see [Detectron](https://github.com/facebookresearch/Detectron), which includes an implementation of [Mask R-CNN](https://arxiv.org/abs/1703.06870).
+## This is the final project of computer vision class in MUST [Detectron](https://github.com/facebookresearch/Detectron), which includes an implementation of [Mask R-CNN](https://arxiv.org/abs/1703.06870).
 
 # *Faster* R-CNN: Towards Real-Time Object Detection with Region Proposal Networks
 
