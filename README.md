@@ -3,7 +3,7 @@
 This is the final project of computer vision class in [MUST](https://www.must.edu.mo), which foucu
 
 By Shuoyan Tang(1220009721), Xinran Mi( at Macau university of science and technology.
-
+---
 ### Introduction
 
 **Faster** R-CNN is an object detection framework based on deep convolutional networks, which includes a Region Proposal Network (RPN) and an Object Detection Network. Both networks are trained for sharing convolutional layers for fast testing. 
