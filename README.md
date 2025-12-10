@@ -1,8 +1,9 @@
 # Low light enhancement
-
-This is the final project of computer vision class in [MUST](https://www.must.edu.mo), which foucu
-
-By Shuoyan Tang(1220009721), Xinran Mi( at Macau university of science and technology.
+---
+This is the final project of computer vision class in [MUST](https://www.must.edu.mo), which focuses on low-light image enhancement based on Retinex theory. It reproduces and compares three representative methods: Multi-Scale Retinex (MSR), Retinex-Net, and Retinexformer, under a unified experimental and evaluation pipeline.
+**By Shuoyan Tang(1220009721), Xinran Mi(1220011281) at Macau university of science and technology.**
+---
+By Shuoyan Tang(1220009721), Xinran Mi(1220011281) at Macau university of science and technology.
 ---
 ### Introduction
 
