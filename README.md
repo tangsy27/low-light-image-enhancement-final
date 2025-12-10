@@ -9,30 +9,10 @@ It reproduces and compares three representative methods: Multi-Scale Retinex (MS
 
 ### Introduction
 
-**Faster** R-CNN is an object detection framework based on deep convolutional networks, which includes a Region Proposal Network (RPN) and an Object Detection Network. Both networks are trained for sharing convolutional layers for fast testing. 
+Low-light image enhancement is crucial for applications in photography, autonomous driving,and surveillance. Images captured under insufficient illumination often suffer from noise, low
+contrast, and color distortion, making visibility improvement in low-light conditions a critical topic. This project aims to reproduce and analyze three representative Retinex-based enhancement approaches: the classical Retinex theory, the CNN-based Retinex-Net, the Transformer-based Retinexformer. We implemented classical Retinex algorithms in Python, and re-training Retinex-Net and Retinexformer following the authors’ official settings. Comparative experiments will be conducted on public benchmark ( LOL-v1). We report PSNR and SSIM for quantitative
+evaluation of enhancement quality and complement them with analyses of illumination estimation and detail recovery.
 
-Faster R-CNN was initially described in an [arXiv tech report](http://arxiv.org/abs/1506.01497).
-
-This repo contains a MATLAB re-implementation of Fast R-CNN. Details about Fast R-CNN are in: [rbgirshick/fast-rcnn](https://github.com/rbgirshick/fast-rcnn).
-
-This code has been tested on Windows 7/8 64-bit, Windows Server 2012 R2, and Linux, and on MATLAB 2014a.
-
-Python version is available at [py-faster-rcnn](https://github.com/rbgirshick/py-faster-rcnn).
-
-### License
-
-Faster R-CNN is released under the MIT License (refer to the LICENSE file for details).
-
-### Citing Faster R-CNN
-
-If you find Faster R-CNN useful in your research, please consider citing:
-
-    @article{ren15fasterrcnn,
-        Author = {Shaoqing Ren, Kaiming He, Ross Girshick, Jian Sun},
-        Title = {{Faster R-CNN}: Towards Real-Time Object Detection with Region Proposal Networks},
-        Journal = {arXiv preprint arXiv:1506.01497},
-        Year = {2015}
-    }
 
 ### Main Results
 |                           | training data                          | test data            | mAP   | time/img |
