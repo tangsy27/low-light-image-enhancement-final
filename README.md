@@ -1,9 +1,7 @@
 # Low light enhancement
-## This is the final project of computer vision class in [MUST](https://www.must.edu.mo), which includes an implementation of [Mask R-CNN](https://arxiv.org/abs/1703.06870).
+This is the final project of computer vision class in [MUST](https://www.must.edu.mo), which foucu
 
-# *Faster* R-CNN: Towards Real-Time Object Detection with Region Proposal Networks
-
-By Shaoqing Ren, Kaiming He, Ross Girshick, Jian Sun at Microsoft Research
+By Shuoyan Tang(1220009721), Xinran Mi( at Macau university of science and technology.
 
 ### Introduction
 
