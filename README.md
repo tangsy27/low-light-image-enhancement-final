@@ -14,16 +14,16 @@ contrast, and color distortion, making visibility improvement in low-light condi
 evaluation of enhancement quality and complement them with analyses of illumination estimation and detail recovery.
 
 
-### Main Results
-|                           | training data                          | test data            | mAP   | time/img |
-| ------------------------- |:--------------------------------------:|:--------------------:|:-----:|:-----: |
-| Faster RCNN, VGG-16       | VOC 2007 trainval                      | VOC 2007 test        | 69.9% | 198ms |
-| Faster RCNN, VGG-16       | VOC 2007 trainval + 2012 trainval      | VOC 2007 test        | 73.2% | 198ms |
-| Faster RCNN, VGG-16       | VOC 2012 trainval                      | VOC 2012 test        | 67.0% | 198ms |
-| Faster RCNN, VGG-16       | VOC 2007 trainval&test + 2012 trainval | VOC 2012 test        | 70.4% | 198ms |
+### Main Results (PSNR and SSIM)
+|     Category     |    Method        |    PSNR   | SSIM  |
+| ---------------- |:----------------:|:---------:|:-----:|
+|Classical	       |Retinex(Gray)     |11.9213    |0.4770 |
+|Classical	       |Retinex(RGB)      |13.3530    |0.4749 |
+|Deep	           |Retinex-Net       |16.7740    |0.4285 |
+|Deep	           |Retinexformer     |13.6988    |0.7732 |
 
-**Note**: The mAP results are subject to random variations. We have run 5 times independently for ZF net, and the mAPs are 59.9 (as in the paper), 60.4, 59.5, 60.1, and 59.5, with a mean of 59.88 and std 0.39.
 
+Table 1: Qualitative results of the deep Retinex-based methods on LOL-v1
 
 ### Contents
 0. [Requirements: software](#requirements-software)
@@ -37,11 +37,41 @@ evaluation of enhancement quality and complement them with analyses of illuminat
 
 ### Requirements: software
 
-0. `Caffe` build for Faster R-CNN (included in this repository, see `external/caffe`)
-    - If you are using Windows, you may download a compiled mex file by running `fetch_data/fetch_caffe_mex_windows_vs2013_cuda65.m`
-    - If you are using Linux or you want to compile for Windows, please follow the [instructions](https://github.com/ShaoqingRen/caffe/tree/faster-R-CNN) on our Caffe branch.
-0.	MATLAB
- 
+> Below is the software stack we actually used on the Alibaba Cloud GPU server to run Multi-scale Retinex (IPOL C code), Retinex-Net, and Retinexformer.
+
+OS: Ubuntu 20.04 (Alibaba Cloud GPU ECS image)
+
+NVIDIA driver + CUDA: default CUDA 11.x stack from the cloud image (sufficient for PyTorch 2.x)
+
+Package manager: apt
+
+Common CLI tools:
+
+git (clone code)
+
+tmux (long training / testing sessions)
+
+wget / curl (download datasets / checkpoints)
+
+unzip, tar (unpack archives)
+
+(b) Python & Conda environments
+
+We managed everything via conda and created separate environments for different frameworks:
+
+Conda: Anaconda / Miniconda installed on the server
+
+Python versions:
+
+Python 3.8 – used for TensorFlow 1.x (Retinex-Net)
+
+Python 3.10 – used for PyTorch 2.x (Retinexformer + evaluation scripts)
+
+Conda env examples（与你当时实际用的类似）：
+
+tf1 / retinexnet：TensorFlow 1.x 环境
+
+torch2 / retinexformer：PyTorch 2.x 环境
     
 ### Requirements: hardware
 
