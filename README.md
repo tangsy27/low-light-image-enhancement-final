@@ -1,4 +1,19 @@
-# Retinex-Based Low-Light Image Enhancement
+<h1 align="center">
+  <br>
+  <a href="#">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="docs/logo-retinex-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="docs/logo-retinex-light.svg">
+      <img src="docs/logo-retinex-light.svg" alt="Retinex-Based Low-Light Image Enhancement" width="420">
+    </picture>
+  </a>
+  <br>
+</h1>
+
+<h2 align="center">
+  Retinex-Based Low-Light Image Enhancement
+</h2>
+
 
 This is a final project for the Computer Vision course in [MUST](https://www.must.edu.mo), which focuses on low-light image enhancement based on Retinex theory. 
 It reproduces and compares three representative methods: Multi-Scale Retinex (MSR), Retinex-Net, and Retinexformer, under a unified experimental and evaluation pipeline.
