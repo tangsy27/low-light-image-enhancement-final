@@ -52,11 +52,45 @@ Table 1: Qualitative results of the deep Retinex-based methods on LOL-v1
 
 > Below is the software stack we actually used on the Alibaba Cloud GPU server to run Multi-scale Retinex (IPOL C code), Retinex-Net, and Retinexformer.
 
-OS: Ubuntu 20.04 (Alibaba Cloud GPU ECS image)
+(0)  Server Environment
+- _Cloud Platform_: Alibaba Cloud ECS  
+- _CPU Architecture_: x86_64  
+- _Operating System_: Ubuntu 20.04.6 LTS
 
-NVIDIA driver + CUDA: default CUDA 11.x stack from the cloud image (sufficient for PyTorch 2.x)
+(1)  Python & Conda  Environment
+- _Miniconda3_
+- _Conda_: conda 25.9.1
 
-Package manager: apt
+(2) Multiscale Retinex Environment (IPOL C implementation, no conda env)
+- _Compiler & build toolchain_: gcc / g++ , make
+- _Image / math libraries_: libpng, libjpeg, FFTW3
+-_ Command-line utilities_: bash, wget/curl, tar
+- _Optional Python stack_ : numpy, Pillow, opencv-python, scikit-image, pandas
+
+(3) Retinex-Net Environment (conda env: Retinexnet)
+- _Python_: Python 3.7
+- _Core DL stack_: tensorflow 1.x (CPU build),keras 2.x
+- _Common Python packages_: numpy,scipy,scikit-image,opencv-python (cv2),Pillow,matplotlib
+- _Training / data utilities_: h5py,tqdm
+- _Config / logging tools_: pyyaml,tensorboard
+
+(4)  Retinexformer Environment (conda env: Retinexformer)
+- _Python_: Python 3.7
+- _Core DL / Restoration stack_: torch,basicsr
+- _Data / IO backend_: python-lmdb
+- _Common Python packages_: numpy,opencv-python (cv2)
+- _Config / utilities / bulid toolchain_: pyyaml,tqdm,Cython,cffi,setuptools
+
+
+pyyaml（解析 .yml 配置文件）
+
+tqdm（测试进度条）
+
+Cython
+
+cffi
+
+setuptools / distutils（用于 setup.py develop 等安装方式）
 
 Common CLI tools:
 
