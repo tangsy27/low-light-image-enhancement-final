@@ -1,19 +1,18 @@
 <svg width="800" height="200" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
-  <!-- 光晕 + 太阳 -->
   <defs>
-    <radialGradient id="glowLight" cx="0.18" cy="0.5" r="0.7">
-      <stop offset="0%" stop-color="#FFE5B3" stop-opacity="1"/>
-      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    <radialGradient id="glowDark" cx="0.18" cy="0.5" r="0.75">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#020617" stop-opacity="0"/>
     </radialGradient>
   </defs>
 
-  <!-- 透明背景，方便和 GitHub 融合 -->
-  <rect x="0" y="0" width="800" height="200" fill="transparent"/>
+  <!-- 深色背景 -->
+  <rect x="0" y="0" width="800" height="200" fill="#020617"/>
 
-  <circle cx="120" cy="100" r="70" fill="url(#glowLight)"/>
-  <circle cx="120" cy="100" r="22" fill="#FF8A3C"/>
+  <circle cx="120" cy="100" r="80" fill="url(#glowDark)"/>
+  <circle cx="120" cy="100" r="22" fill="#F97316"/>
 
-  <g stroke="#FF8A3C" stroke-width="6" stroke-linecap="round">
+  <g stroke="#38BDF8" stroke-width="6" stroke-linecap="round">
     <line x1="120" y1="52" x2="120" y2="26"/>
     <line x1="120" y1="148" x2="120" y2="174"/>
     <line x1="72" y1="100" x2="46" y2="100"/>
@@ -25,22 +24,22 @@
     <line x1="152" y1="132" x2="170" y2="150"/>
   </g>
 
-  <!-- 标题：更现代的无衬线 + 半粗 -->
+  <!-- 标题：亮一点的近白色，保持半粗 -->
   <text x="250" y="95"
         font-size="30"
         font-weight="600"
         font-family="'Poppins','Inter',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif"
-        fill="#111827"
+        fill="#F9FAFB"
         letter-spacing="0.5">
     Retinex-Based Low-Light
   </text>
 
-  <!-- 副标题：细一点，冷灰色 -->
+  <!-- 副标题：冷灰色，稍微低调一点 -->
   <text x="250" y="130"
         font-size="18"
         font-weight="400"
         font-family="'Poppins','Inter',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif"
-        fill="#6B7280"
+        fill="#9CA3AF"
         letter-spacing="0.4">
     Image Enhancement Project
   </text>
