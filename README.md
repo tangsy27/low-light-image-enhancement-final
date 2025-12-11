@@ -2,9 +2,9 @@
   <br>
   <a href="#">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="docs/logo-retinex-dark.svg">
-      <source media="(prefers-color-scheme: light)" srcset="docs/logo-retinex-light.svg">
-      <img src="docs/logo-retinex-light.svg" alt="Retinex-Based Low-Light Image Enhancement" width="420">
+      <source media="(prefers-color-scheme: dark)" srcset="logo-retinex-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="logo-retinex-light.svg">
+      <img src="logo-retinex-light.svg" alt="Retinex-Based Low-Light Image Enhancement" width="420">
     </picture>
   </a>
   <br>
