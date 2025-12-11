@@ -1,0 +1,45 @@
+<svg width="800" height="200" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- 柔和的光晕背景 -->
+  <defs>
+    <radialGradient id="glowLight" cx="0.18" cy="0.5" r="0.7">
+      <stop offset="0%" stop-color="#FFE5B3" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="0" y="0" width="800" height="200" fill="white"/>
+  <circle cx="120" cy="100" r="70" fill="url(#glowLight)"/>
+
+  <!-- 中间的“光源” -->
+  <circle cx="120" cy="100" r="22" fill="#FF8A3C"/>
+
+  <!-- 放射状的光线（Retinex / 光照扩散的感觉） -->
+  <g stroke="#FF8A3C" stroke-width="6" stroke-linecap="round">
+    <line x1="120" y1="52" x2="120" y2="26"/>
+    <line x1="120" y1="148" x2="120" y2="174"/>
+    <line x1="72" y1="100" x2="46" y2="100"/>
+    <line x1="168" y1="100" x2="194" y2="100"/>
+
+    <line x1="88"  y1="68"  x2="70"  y2="50"/>
+    <line x1="152" y1="68"  x2="170" y2="50"/>
+    <line x1="88"  y1="132" x2="70"  y2="150"/>
+    <line x1="152" y1="132" x2="170" y2="150"/>
+  </g>
+
+  <!-- 右侧主标题 -->
+  <text x="240" y="98"
+        font-size="30"
+        font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        fill="#222222"
+        letter-spacing="1">
+    Retinex-Based Low-Light
+  </text>
+
+  <!-- 副标题，稍微小一点，艺术感但保持专业 -->
+  <text x="240" y="132"
+        font-size="22"
+        font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        fill="#777777">
+    Image Enhancement
+  </text>
+</svg>
