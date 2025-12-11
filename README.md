@@ -10,9 +10,7 @@
   <br>
 </h1>
 
-<h2 align="center">
-  Retinex-Based Low-Light Image Enhancement
-</h2>
+
 
 
 This is a final project for the Computer Vision course in [MUST](https://www.must.edu.mo), which focuses on low-light image enhancement based on Retinex theory. 
