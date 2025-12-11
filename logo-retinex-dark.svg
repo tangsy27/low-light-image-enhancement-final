@@ -1,22 +1,17 @@
 <svg width="800" height="200" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- 暗背景下的冷色光晕 -->
     <radialGradient id="glowDark" cx="0.18" cy="0.5" r="0.75">
-      <stop offset="0%" stop-color="#3FE0FF" stop-opacity="0.9"/>
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.9"/>
       <stop offset="100%" stop-color="#020617" stop-opacity="0"/>
     </radialGradient>
   </defs>
 
-  <!-- 深色背景（接近 GitHub dark 模式） -->
+  <!-- 深色背景 -->
   <rect x="0" y="0" width="800" height="200" fill="#020617"/>
 
-  <!-- 冷色光晕 -->
   <circle cx="120" cy="100" r="80" fill="url(#glowDark)"/>
-
-  <!-- 中心发光点 -->
   <circle cx="120" cy="100" r="22" fill="#F97316"/>
 
-  <!-- 光线：用冷色线条 + 暖色中心，营造“在暗中提亮”的感觉 -->
   <g stroke="#38BDF8" stroke-width="6" stroke-linecap="round">
     <line x1="120" y1="52" x2="120" y2="26"/>
     <line x1="120" y1="148" x2="120" y2="174"/>
@@ -29,20 +24,23 @@
     <line x1="152" y1="132" x2="170" y2="150"/>
   </g>
 
-  <!-- 主标题：偏暖的偏白色，在暗背景上比较柔和 -->
-  <text x="240" y="98"
+  <!-- 标题：亮一点的近白色，保持半粗 -->
+  <text x="250" y="95"
         font-size="30"
-        font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-weight="600"
+        font-family="'Poppins','Inter',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif"
         fill="#F9FAFB"
-        letter-spacing="1">
+        letter-spacing="0.5">
     Retinex-Based Low-Light
   </text>
 
-  <!-- 副标题：稍微暗一点的冷灰色 -->
-  <text x="240" y="132"
-        font-size="22"
-        font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
-        fill="#9CA3AF">
-    Image Enhancement
+  <!-- 副标题：冷灰色，稍微低调一点 -->
+  <text x="250" y="130"
+        font-size="18"
+        font-weight="400"
+        font-family="'Poppins','Inter',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif"
+        fill="#9CA3AF"
+        letter-spacing="0.4">
+    Image Enhancement Project
   </text>
 </svg>
