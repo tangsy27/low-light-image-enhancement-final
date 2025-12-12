@@ -83,16 +83,15 @@ Table 1: Qualitative results of the deep Retinex-based methods on LOL-v1
 
 ### Pretrained Models
 
-> Each sub-project in this repo comes with its own pretrained models stored inside the corresponding project folder.  
-For clarity and quick access, I also collect the commonly used weights into a unified `pretrained_models/` directory at the root of the repository.
-
+All pretrained models are already packed inside their own subfolders — just run the code and everything works out of the box.
 
 
 
 ### Preparation for Testing:
-0.	Run `fetch_data/fetch_caffe_mex_windows_vs2013_cuda65.m` to download a compiled Caffe mex (for Windows only).
-0.	Run `faster_rcnn_build.m`
-0.	Run `startup.m`
+1.	You need to download the LOL-v1 dataset using  [Baidu Disk](https://pan.baidu.com/s/1ZAC9TWR-YeuLIkWs3L7z4g?pwd=cyh2) (code: `cyh2`) or [Google Drive](https://drive.google.com/file/d/1L-kqSQyrmMueBh_ziWoPFhfsAh50h20H/view?usp=sharing)
+
+2.	following the readme from the subfolder of each method ( [Multi-retienx](Multiscale-retinex/readme(Multi-retinex).md) ; [Retinex-net](Retinex-net/readme(retinex-net).md) ; [Retinexformer](Retinexformer/readme(retinexformer).md)
+
 
 
 ### Testing Demo:
