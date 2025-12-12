@@ -81,6 +81,14 @@ Table 1: Qualitative results of the deep Retinex-based methods on LOL-v1
 - _Config / utilities / bulid toolchain_: pyyaml,tqdm,Cython,cffi,setuptools
 
 
+### Pretrained Models
+
+> Each sub-project in this repo comes with its own pretrained models stored inside the corresponding project folder.  
+For clarity and quick access, I also collect the commonly used weights into a unified `pretrained_models/` directory at the root of the repository.
+
+
+
+
 ### Preparation for Testing:
 0.	Run `fetch_data/fetch_caffe_mex_windows_vs2013_cuda65.m` to download a compiled Caffe mex (for Windows only).
 0.	Run `faster_rcnn_build.m`
