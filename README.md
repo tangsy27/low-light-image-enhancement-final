@@ -40,7 +40,6 @@ Table 1: Qualitative results of the deep Retinex-based methods on LOL-v1
 
 ### Contents
 0. [Requirements: software](#requirements-software)
-0. [Requirements: hardware](#requirements-hardware)
 0. [Preparation for Testing](#preparation-for-testing)
 0. [Testing Demo](#testing-demo)
 0. [Preparation for Training](#preparation-for-training)
@@ -80,56 +79,6 @@ Table 1: Qualitative results of the deep Retinex-based methods on LOL-v1
 - _Data / IO backend_: python-lmdb
 - _Common Python packages_: numpy,opencv-python (cv2)
 - _Config / utilities / bulid toolchain_: pyyaml,tqdm,Cython,cffi,setuptools
-
-
-pyyaml（解析 .yml 配置文件）
-
-tqdm（测试进度条）
-
-Cython
-
-cffi
-
-setuptools / distutils（用于 setup.py develop 等安装方式）
-
-Common CLI tools:
-
-git (clone code)
-
-tmux (long training / testing sessions)
-
-wget / curl (download datasets / checkpoints)
-
-unzip, tar (unpack archives)
-
-(b) Python & Conda environments
-
-We managed everything via conda and created separate environments for different frameworks:
-
-Conda: Anaconda / Miniconda installed on the server
-
-Python versions:
-
-Python 3.8 – used for TensorFlow 1.x (Retinex-Net)
-
-Python 3.10 – used for PyTorch 2.x (Retinexformer + evaluation scripts)
-
-Conda env examples（与你当时实际用的类似）：
-
-tf1 / retinexnet：TensorFlow 1.x 环境
-
-torch2 / retinexformer：PyTorch 2.x 环境
-    
-### Requirements: hardware
-
-GPU: Titan, Titan Black, Titan X, K20, K40, K80.
-
-0. Region Proposal Network (RPN)
-    - 2GB GPU memory for ZF net
-    - 5GB GPU memory for VGG-16 net
-0. Object Detection Network (Fast R-CNN)
-    - 3GB GPU memory for ZF net
-    - 8GB GPU memory for VGG-16 net
 
 
 ### Preparation for Testing:
