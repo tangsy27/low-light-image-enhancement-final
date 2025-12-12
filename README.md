@@ -80,10 +80,10 @@ All pretrained models are already packed inside their own subfolders — just ru
 
 
 
-### Preparation for Training:
+### Preparation for Training
 1.	You need to download the LOL-v1 dataset using  [Baidu Disk](https://pan.baidu.com/s/1ZAC9TWR-YeuLIkWs3L7z4g?pwd=cyh2) (code: `cyh2`) or [Google Drive](https://drive.google.com/file/d/1L-kqSQyrmMueBh_ziWoPFhfsAh50h20H/view?usp=sharing)
 
-2.	following the readme from the subfolder of each method ( [Multi-retienx](Multiscale-retinex/readme(Multi-retinex).md) ; [Retinex-net](Retinex-net/readme(retinex-net).md) ; [Retinexformer](Retinexformer/readme(retinexformer).md)
+2.	following the readme from the subfolder of each method ( [Multi-retienx](Multiscale-retinex/readme(Multi-retinex).md) ; [Retinex-net](Retinex-net/readme(retinex-net).md) ; [Retinexformer](Retinexformer/readme(retinexformer).md) to run each of them.
 
 3.	After getting the enhance image from above three method, we can using the [evaluation code](Evaluation/PSNR-SSIM.py)  to know the each method's PSNR and SSIM and make a diretly comparison.
 
