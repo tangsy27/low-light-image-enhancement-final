@@ -54,7 +54,7 @@ Table 1: Qualitative results of the deep Retinex-based methods on LOL-v1
 (2) Multiscale Retinex Environment (IPOL C implementation, no conda env)
 - _Compiler & build toolchain_: gcc / g++ , make
 - _Image / math libraries_: libpng, libjpeg, FFTW3
--_ Command-line utilities_: bash, wget/curl, tar
+- _Command-line utilities_: bash, wget/curl, tar
 - _Optional Python stack_ : numpy, Pillow, opencv-python, scikit-image, pandas
 
 (3) Retinex-Net Environment (conda env: Retinexnet)
